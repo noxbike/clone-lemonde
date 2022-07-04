@@ -1,0 +1,14 @@
+.switch-language{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .separate-language-switch{
+        height: 17px;
+        margin:0.5rem;
+        border-right: 1px solid #bdc1c8;
+    }
+    .language{
+        color: #bdc1c8;
+    }
+}
