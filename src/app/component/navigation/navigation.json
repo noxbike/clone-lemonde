@@ -1,0 +1,131 @@
+{
+    "navigation":[
+        {
+            "name":"home",
+            "haveScdNav": false,
+            "link":"#"
+        },
+        {
+            "name":"actualités",
+            "haveScdNav": true,
+            "secondNavigation":{
+                "En ce moment":{
+                        "Politique": "#",
+                        "Guerre en ukraine": "#",
+                        "Coronavirus et pandémie de Covid-19":"#",
+                        "Algérie":"#",
+                        "Tour de France 2022":"#",
+                        "Climat":"#",
+                        "Etats-Unies":"#",
+                        "ParcourSup":"#",
+                        "Bac":"#",
+                        "Toute l'actualité en continu":"#"
+                },
+                "Actualités":{
+                        "International":"#",
+                        "Planète":"#",
+                        "Santé":"#",
+                        "Politique":"#",
+                        "Sciences":"#",
+                        "Big browser":"#",
+                        "Sociétés":"#",
+                        "M Campus":"#",
+                        "Disparitions":"#",
+                        "Les Décodeurs":"#",
+                        "Le monde d'afrique":"#",
+                        "Podcasts":"#",
+                        "Sports":"#",
+                        "Pixel":"#",
+                        "Le monde & vous":"#"
+                    }
+                }
+        },
+        {
+            "name":"économie",
+            "haveScdNav": true,
+            "secondNavigation":{
+                    "économie":{
+                        "ECONOMIE":"#",
+                        "Economie mondiale":"#",
+                        "Economie française":"#",
+                        "Média":"#",
+                        "Emploi":"#",
+                        "Argent & placements":"#",
+                        "Tribune éco":"#",
+                        "Cities":"#",
+                        "Le club de l'économie":"#"
+                    }
+            }
+        },
+        {
+            "name":"vidéos",
+            "haveScdNav": true,
+            "secondNavigation":{
+                    "vidéos":{
+                        "VIDEOS":"#",
+                        "L'actualité":"#",
+                        "Les explications":"#",
+                        "Enquêtes vidéo":"#",
+                        "Les mini séries":"#"
+                    }
+            }
+        },
+        {
+            "name":"débats",
+            "haveScdNav": true,
+            "secondNavigation":{
+                "débats":{
+                    "DEBATS":"#",
+                    "Editoriaux":"#",
+                    "Chroniques":"#",
+                    "Enquête idées":"#",
+                    "Notion":"#",
+                    "Entretiens idées":"#",
+                    "Analyses":"#",
+                    "Tribunes":"#"
+                }
+            }
+        },
+        {
+            "name":"culture",
+            "haveScdNav": true,
+            "secondNavigation":{
+                "culture":{
+                    "CULTURE":"#",
+                    "Cinéma":"#",
+                    "Télévision":"#",
+                    "Livre":"#",
+                    "Musiques":"#",
+                    "Art":"#",
+                    "Scène":"#"
+                }
+            }
+        },
+        {
+            "name":"m le mag",
+            "haveScdNav": true,
+            "secondNavigation":{
+                "débats":{
+                    "DEBATS":"#",
+                    "L'actu":"#",
+                    "L'époque":"#",
+                    "Le style":"#",
+                    "Le monde passe à table":"#",
+                    "Voyage":"#",
+                    "Mode":"#",
+                    "Les Recettes du Monde":"#"
+                }
+            }
+        },
+        {
+            "name":"services",
+            "haveScdNav": true,
+            "secondNavigation":[]
+        },
+        {
+            "name":"search",
+            "haveScdNav": false,
+            "link":"#"
+        }
+    ]
+}

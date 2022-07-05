@@ -1,1 +1,36 @@
-<p>navigation work</p>
+<div class="navigation">
+    <ul class="list-navigation">
+        <li *ngFor="let navigation of navigations">
+            <a  [class.dropdown-button]="navigation.haveScdNav" routerLink="{{navigation.link && navigation.link}}">
+                {{navigation.name | uppercase}}{{navigation.secondNavigation && '+'}}
+            </a>
+        </li>
+    </ul>
+    <div class="newsByTime">
+        <ul>
+            <li>
+                <p class="time">16:22</p>
+                <a href="#">Démission du chef des opérations d’Easyjet</a>
+            </li>
+            <li>
+                <p class="time">16:04</p>
+                <a href="#"> El Haïry redevient secrétaire d’Etat à la jeunesse </a>
+            </li>
+            <li>
+                <p class="time">16:00</p>
+                <a href="#"> Covid-19 : confinement dans l’est de la Chine </a>
+            </li>
+            <li>
+                <p class="time">15:28</p>
+                <a href="#"> Finances publiques : la Cour des comptes alerte </a>
+            </li>
+            <li>
+                <p class="time">14:33</p>
+                <a href="#"> Finances publiques : la Cour des comptes alerte </a>
+            </li>
+            <li class="voirPlus">
+                <a href="#">Voir plus ></a>
+            </li>
+        </ul>
+    </div>
+</div>

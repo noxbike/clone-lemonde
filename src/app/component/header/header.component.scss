@@ -9,14 +9,14 @@
         border-right: 1px solid #bdc1c8;
     }
     a{
-        color:black;
+        color:#2a303b;
         text-decoration: none;
     }
     .language{
         color: #bdc1c8;
     }
     .language:hover{
-        color:black;
+        color:#2a303b;
     }
 }
 
@@ -24,6 +24,7 @@
     display:flex;
     flex-direction: row;
     justify-content:space-around;
+    align-items: center;
     .read-classic-newsPaper{
         display: flex;
         flex-direction: row;
@@ -42,7 +43,7 @@
     }
     img{
         margin-top: -7rem;
-        margin-bottom: -8rem;
+        margin-bottom: -7rem;
         width: 20rem;
         cursor: pointer;
     }
@@ -52,7 +53,7 @@
             padding: 8px 16px;
             border-radius: 5px;
             text-decoration: none;
-            color:black;
+            color:#2a303b;
         }
         .subscribe:hover{
             background-color:#eab002;
@@ -60,7 +61,7 @@
         .connect{
             padding: 8px 16px;
             text-decoration: none;
-            color:black;
+            color:#2a303b;
         }
         .connect:hover{
                 text-decoration: underline;
