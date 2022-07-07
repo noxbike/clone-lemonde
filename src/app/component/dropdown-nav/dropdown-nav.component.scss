@@ -1,0 +1,112 @@
+.dropdown{
+    position : absolute;
+    width: 100%;
+    height:50vh;
+    background-color: #f5f6f8;
+    color: black;
+    .container{
+        width: 60%;
+        margin-right: auto;
+        margin-left: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+        .section{
+            display: inline-block;
+            h3{
+                display: inline-block;
+            }
+            ul{
+                text-align: left;
+                display:flex;
+                flex-direction: row;
+                margin: 0;
+                padding: 0;
+                flex-wrap: wrap;
+                height: 50%;
+                width: 537px;
+                list-style: none;
+                border-top: 1px solid #e2e4e9;
+            }
+            .Suppléments.partenaires{
+                flex-direction: column;
+            }
+            .En.ce.moment{
+               width: 323px;
+               display: flex;
+               flex-direction: row;
+               border-top: none;
+               
+               li{
+                width: initial;
+                padding: 5px 15px;
+                margin: 0px 10px 10px 0px;
+                border-radius: 3px;
+                line-height: 1rem;
+                font-size: 1rem;
+                background-color: rgb(255, 255, 255);
+                border: 1px solid rgba(128, 128, 128, 0.479);
+               }
+               li:hover{
+                background-color: #026b9c;
+                border: 1px solid #026b9c;
+                a{
+                    color:white;
+                }
+               }
+            }
+            .Actualités{
+                width: 810px;
+                justify-content: space-between;
+                border-top: none;
+                li{
+                    border-top: 1px solid #e2e4e9;
+                    width: 30%;
+                    line-height: 2.5rem;
+                    font-size:1.2rem;
+                }
+            }
+            li{
+                width: 50%;
+                line-height: 2.2rem;
+                font-size:1.1rem;
+                a:hover{
+                        color: #026b9c;
+                }
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    .économie, .vidéos, .débats, .culture, .m.le.mag{
+        ul{
+            width: 20%;
+            list-style:none;
+        }
+        li{
+            border-top: 1px solid#e2e4e9;
+            line-height: 2.9rem;
+            font-size: 1.2rem;
+            min-width: 70%;
+        }
+        li:hover a {
+            color: #026b9c;
+        }
+        li:nth-child(1){
+            border-top: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            display: flex;
+            justify-content: space-between;
+            span:nth-child(2){
+                color:#e2e4e9 ;
+            }
+        }
+    }
+}

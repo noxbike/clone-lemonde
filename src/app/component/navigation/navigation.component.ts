@@ -7,10 +7,15 @@ import navigation from './navigation.json';
 })
 export class NavigationComponent implements OnInit {
   navigations = navigation.navigation;
+  dropdown!: any;
   constructor() { }
 
   ngOnInit(): void {
-    
+    this.dropdown =[];
+  }
+
+  setDropdown(value: any): void {
+    this.dropdown = value.haveScdNav ? value : [];
   }
 
 }

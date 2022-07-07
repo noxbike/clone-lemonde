@@ -8,119 +8,161 @@
         {
             "name":"actualités",
             "haveScdNav": true,
-            "secondNavigation":{
-                "En ce moment":{
-                        "Politique": "#",
-                        "Guerre en ukraine": "#",
-                        "Coronavirus et pandémie de Covid-19":"#",
-                        "Algérie":"#",
-                        "Tour de France 2022":"#",
-                        "Climat":"#",
-                        "Etats-Unies":"#",
-                        "ParcourSup":"#",
-                        "Bac":"#",
-                        "Toute l'actualité en continu":"#"
-                },
-                "Actualités":{
-                        "International":"#",
-                        "Planète":"#",
-                        "Santé":"#",
-                        "Politique":"#",
-                        "Sciences":"#",
-                        "Big browser":"#",
-                        "Sociétés":"#",
-                        "M Campus":"#",
-                        "Disparitions":"#",
-                        "Les Décodeurs":"#",
-                        "Le monde d'afrique":"#",
-                        "Podcasts":"#",
-                        "Sports":"#",
-                        "Pixel":"#",
-                        "Le monde & vous":"#"
+            "secondNavigation":[
+                    {   "name": "En ce moment",
+                        "nav": [
+                            {"name":"Politique", "link": "#"},
+                            {"name":"Guerre en ukraine", "link": "#"},
+                            {"name":"Coronavirus et pandémie de Covid-19", "link":"#"},
+                            {"name":"Algérie","link":"#"},
+                            {"name":"Tour de France 2022","link":"#"},
+                            {"name":"Climat","link":"#"},
+                            {"name":"Etats-Unies","link":"#"},
+                            {"name":"ParcourSup","link":"#"},
+                            {"name":"Bac","link":"#"},
+                            {"name":"Toute l'actualité en continu", "link":"#"}
+                        ]
+                    },
+                    {   "name": "Actualités",
+                        "nav": [
+                            {"name":"International","link":"#"},
+                            {"name":"Planète","link":"#"},
+                            {"name":"Santé","link":"#"},
+                            {"name":"Politique","link":"#"},
+                            {"name":"Sciences","link":"#"},
+                            {"name":"Big browser","link":"#"},
+                            {"name":"Sociétés","link":"#"},
+                            {"name":"M Campus","link":"#"},
+                            {"name":"Disparitions","link":"#"},
+                            {"name":"Les Décodeurs","link":"#"},
+                            {"name":"Le monde d'afrique","link":"#"},
+                            {"name":"Podcasts","link":"#"},
+                            {"name":"Sports","link":"#"},
+                            {"name":"Pixel","link":"#"},
+                            {"name":"Le monde & vous", "link":"#"}
+                        ]
                     }
-                }
+                ]
         },
         {
             "name":"économie",
             "haveScdNav": true,
-            "secondNavigation":{
-                    "économie":{
-                        "ECONOMIE":"#",
-                        "Economie mondiale":"#",
-                        "Economie française":"#",
-                        "Média":"#",
-                        "Emploi":"#",
-                        "Argent & placements":"#",
-                        "Tribune éco":"#",
-                        "Cities":"#",
-                        "Le club de l'économie":"#"
-                    }
-            }
+            "secondNavigation":[
+                [
+                    {"name":"ECONOMIE", "link":"#"},
+                    {"name":"Economie mondiale", "link":"#"},
+                    {"name":"Economie française", "link":"#"},
+                    {"name":"Média", "link":"#"},
+                    {"name":"Emploi", "link":"#"},
+                    {"name":"Argent & placements", "link":"#"},
+                    {"name":"Tribune éco", "link":"#"},
+                    {"name":"Cities", "link":"#"},
+                    {"name":"Le club de l'économie", "link":"#"}
+                ]
+            ]
         },
         {
             "name":"vidéos",
             "haveScdNav": true,
-            "secondNavigation":{
-                    "vidéos":{
-                        "VIDEOS":"#",
-                        "L'actualité":"#",
-                        "Les explications":"#",
-                        "Enquêtes vidéo":"#",
-                        "Les mini séries":"#"
-                    }
-            }
+            "secondNavigation": [
+                [
+                    {"name":"VIDEOS", "link":"#"},
+                    {"name":"L'actualité", "link":"#"},
+                    {"name":"Les explications", "link":"#"},
+                    {"name":"Enquêtes vidéo", "link":"#"},
+                    {"name":"Les mini séries", "link":"#"}
+                ]
+            ]
         },
         {
             "name":"débats",
             "haveScdNav": true,
-            "secondNavigation":{
-                "débats":{
-                    "DEBATS":"#",
-                    "Editoriaux":"#",
-                    "Chroniques":"#",
-                    "Enquête idées":"#",
-                    "Notion":"#",
-                    "Entretiens idées":"#",
-                    "Analyses":"#",
-                    "Tribunes":"#"
-                }
-            }
+            "secondNavigation":[
+                [
+                    {"name":"DEBATS", "link":"#"},
+                    {"name":"Editoriaux", "link":"#"},
+                    {"name":"Chroniques", "link":"#"},
+                    {"name":"Enquête idées", "link":"#"},
+                    {"name":"Notion", "link":"#"},
+                    {"name":"Entretiens idées", "link":"#"},
+                    {"name":"Analyses", "link":"#"},
+                    {"name":"Tribunes", "link":"#"}
+                ]
+            ]
         },
         {
             "name":"culture",
             "haveScdNav": true,
-            "secondNavigation":{
-                "culture":{
-                    "CULTURE":"#",
-                    "Cinéma":"#",
-                    "Télévision":"#",
-                    "Livre":"#",
-                    "Musiques":"#",
-                    "Art":"#",
-                    "Scène":"#"
-                }
-            }
+            "secondNavigation":[
+                [
+                    {"name":"CULTURE", "link": "#"},
+                    {"name":"Cinéma", "link": "#"},
+                    {"name":"Télévision", "link": "#"},
+                    {"name":"Livre", "link": "#"},
+                    {"name":"Musiques", "link": "#"},
+                    {"name":"Art", "link": "#"},
+                    {"name":"Scène", "link": "#"}
+                ]
+            ]
         },
         {
             "name":"m le mag",
             "haveScdNav": true,
-            "secondNavigation":{
-                "débats":{
-                    "DEBATS":"#",
-                    "L'actu":"#",
-                    "L'époque":"#",
-                    "Le style":"#",
-                    "Le monde passe à table":"#",
-                    "Voyage":"#",
-                    "Mode":"#",
-                    "Les Recettes du Monde":"#"
-                }
-            }
+            "secondNavigation":[
+                [
+                    {"name":"DEBATS", "link":"#"},
+                    {"name":"L'actu", "link":"#"},
+                    {"name":"L'époque", "link":"#"},
+                    {"name":"Le style", "link":"#"},
+                    {"name":"Le monde passe à table", "link":"#"},
+                    {"name":"Voyage", "link":"#"},
+                    {"name":"Mode", "link":"#"},
+                    {"name":"Les Recettes du Monde", "link":"#"}
+                ]
+            ]
         },
         {
             "name":"services",
             "haveScdNav": true,
-            "secondNavigation":[]
+            "secondNavigation":[
+                {"name": "Services le monde",
+                "nav":[
+                    {"name":"Les ateliers du Monde", "link":"#"},
+                    {"name":"Guides d'achat", "link":"#"},
+                    {"name":"Mémorable:améliorer sa culture générale", "link":"#"},
+                    {"name":"Boutique Le Monde", "link":"#"},
+                    {"name":"Mots croisés / Sudokus", "link":"#"},
+                    {"name":"Newsletters", "link":"#"}
+                ]},
+                {"name": "Services partenaires",
+                "nav":[
+                    {"name":"Cours d'anglais", "link":"#"},
+                    {"name":"Dicocitations", "link":"#"},
+                    {"name":"Formation professionnelle", "link":"#"},
+                    {"name":"Paroles de chanson", "link":"#"},
+                    {"name":"Jardinage", "link":"#"},
+                    {"name":"Annonces immobilières", "link":"#"}
+                ]},
+                {"name": "Service codes promo",
+                "nav":[
+                    {"name":"Codes Promo", "link":"#"},
+                    {"name":"Codes Promo Asos", "link":"#"},
+                    {"name":"Codes Promo Amazon", "link":"#"},
+                    {"name":"Codes Promo Pandora", "link":"#"},
+                    {"name":"Codes Promo BoohooMan", "link":"#"},
+                    {"name":"Codes Promo Cdiscount", "link":"#"},
+                    {"name":"Codes Promo Gorillas", "link":"#"},
+                    {"name":"Codes Promo Boulanger", "link":"#"},
+                    {"name":"Codes Promo Emma Matelas", "link":"#"},
+                    {"name":"Codes Promo Emma NordVpn", "link":"#"}
+                ]},
+                {"name": "Suppléments partenaires",
+                "nav":[
+                    {"name":"Découverte du Québec", "link":"#"},
+                    {"name":"La liberté de créer", "link":"#"},
+                    {"name":"Beaux-Arts en Italie", "link":"#"}
+                ]}
+            ]
         },
         {
             "name":"search",

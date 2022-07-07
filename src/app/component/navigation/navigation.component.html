@@ -1,6 +1,6 @@
 <div class="navigation">
     <ul class="list-navigation">
-        <li *ngFor="let navigation of navigations">
+        <li *ngFor="let navigation of navigations" (click)="setDropdown(navigation)">
             <a  [class.dropdown-button]="navigation.haveScdNav" routerLink="{{navigation.link && navigation.link}}">
                 {{navigation.name | uppercase}}{{navigation.secondNavigation && '+'}}
             </a>
@@ -34,3 +34,4 @@
         </ul>
     </div>
 </div>
+<app-dropdown-nav [dropdown]="dropdown"></app-dropdown-nav>
