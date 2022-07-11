@@ -108,5 +108,36 @@
                 color:#e2e4e9 ;
             }
         }
+        .some-article-nav{
+            padding: 0;
+            width: 75%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            li{
+                border: none;
+                padding: 0 3%;
+                display: flex;
+                flex-direction: column;
+                min-width: 20%;
+            }
+            div{
+                height: 90%;
+                background-color: gray;
+                margin-right: auto;
+                margin-left: auto;
+            }
+            .lemondelogo{
+                background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg height='18….337.167.35z' fill='%23fff'/%3E%3C/g%3E%3C/svg%3E");
+                height: 5px;
+                width: 10px;
+                vertical-align: sub;
+            }
+            a{
+                line-height: normal;
+                display: block;
+                font-size: 0.9rem;
+            }
+        }
     }
 }

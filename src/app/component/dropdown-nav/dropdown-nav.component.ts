@@ -8,16 +8,11 @@ import { DataService } from 'src/app/service/data.service';
 })
 export class DropdownNavComponent implements OnInit {
   @Input() dropdown!:any;
-  articles!: any;
-  constructor(
-    private ds: DataService,
-  ) { }
+  @Input() articles!:any;
+ 
+  constructor() { }
 
   ngOnInit(): void {
-    console.log()
   }
-  getFewArticle() {
-    this.articles = this.ds.getByCategory(this.dropdown)
-    console.log("click")
-  }
+ 
 }

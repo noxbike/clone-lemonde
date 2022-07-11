@@ -9,9 +9,12 @@
             </ul>
         </div>
     </div>
-    <div class="container {{dropdown.name}}">
-        <ul (click)="getFewArticle()" *ngFor="let elements of dropdown.secondNavigation">
+    <div class="container {{dropdown.name}}" *ngIf="dropdown.name != 'actualités' || dropdown.name != 'services'">
+        <ul *ngFor="let elements of dropdown.secondNavigation">
             <li *ngFor="let element of elements"><a href="{{element.link}}"><span>{{element.name}}</span><span>></span></a></li>
+        </ul>
+        <ul class="some-article-nav" *ngIf="articles">
+            <li *ngFor="let article of articles"><a href="#"><div class="img"></div><p>{{article.categorie}}</p><p class='lemondelogo'></p><p>{{article.title}}</p></a></li>
         </ul>
     </div>
 </div>
