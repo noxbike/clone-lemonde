@@ -9,7 +9,7 @@ export class DataService {
   constructor() { }
 
   getArticle(){
-    return this.article
+    return this.article.data
   }
 
   getByCategory(category: string){

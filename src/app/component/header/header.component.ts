@@ -13,7 +13,7 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    this.imageSrc = 'https://www.mucem.org/sites/default/files/2018-11/image_logo_partenaire_le_monde_web.png';
+    this.imageSrc = '../../../assets/lemonde.svg';
     this.imageAlt = 'logo';
     this.journalAlt = 'logo-jounal';
     this.journalLogo= 'https://ge-vendee-littorale.fr/wp-content/uploads/2019/03/Presse.png';

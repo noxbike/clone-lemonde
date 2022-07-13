@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { DataService } from 'src/app/service/data.service';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-dropdown-nav',
@@ -9,10 +8,15 @@ import { DataService } from 'src/app/service/data.service';
 export class DropdownNavComponent implements OnInit {
   @Input() dropdown!:any;
   @Input() articles!:any;
- 
+  @Output() disableActive = new EventEmitter();
+  logoarticle: any = "../../../assets/logoarticle.svg";
+  
   constructor() { }
 
   ngOnInit(): void {
   }
- 
+
+  closeDropdown(){
+    this.disableActive.emit()
+  }
 }

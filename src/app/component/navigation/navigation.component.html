@@ -1,8 +1,12 @@
 <div class="navigation">
     <ul class="list-navigation">
-        <li *ngFor="let navigation of navigations" (click)="setDropdown(navigation)">
-            <a (click)="getFewArticle(navigation.name)" [class.dropdown-button]="navigation.haveScdNav" routerLink="{{navigation.link && navigation.link}}">
-                {{navigation.name | uppercase}}{{navigation.secondNavigation && '+'}}
+        <li *ngFor="let navigation of navigations"  [ngClass]="{Active: dropdown?.name === navigation?.name}" (click)="setDropdown(navigation)">
+            <a *ngIf="navigation?.name != 'home' && navigation?.name != 'search'" [class.dropdown-button]="navigation.haveScdNav" routerLink="{{navigation.link && navigation.link}}">
+                {{navigation.name | uppercase}}
+                <span class="dropdown-icon" ><mat-icon *ngIf="navigation.secondNavigation">expand_less</mat-icon></span>
+            </a>
+            <a routerLink="{{navigation.link}}">
+                <mat-icon *ngIf="navigation?.name == 'home' || navigation?.name == 'search'"aria-hidden="false" aria-label="Example home icon">{{navigation.name}}</mat-icon>
             </a>
         </li>
     </ul>
@@ -34,4 +38,4 @@
         </ul>
     </div>
 </div>
-<app-dropdown-nav [dropdown]="dropdown" [articles]="articles"></app-dropdown-nav>
+<app-dropdown-nav [dropdown]="dropdown" (disableActive) ="onCloseDropdown()" [articles]="articles"></app-dropdown-nav>

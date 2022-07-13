@@ -23,8 +23,11 @@
 .logo-of-company{
     display:flex;
     flex-direction: row;
-    justify-content:space-around;
+    justify-content:space-between;
     align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
     .read-classic-newsPaper{
         display: flex;
         flex-direction: row;
@@ -33,6 +36,7 @@
         img{
             height: 5rem;
             width: 6rem;
+            padding-bottom: 0;
         }
         a{
             text-decoration: none;
@@ -42,8 +46,7 @@
         }
     }
     img{
-        margin-top: -7rem;
-        margin-bottom: -7rem;
+        padding-bottom: 1rem;
         width: 20rem;
         cursor: pointer;
     }

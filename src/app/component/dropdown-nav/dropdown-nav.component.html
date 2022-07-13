@@ -1,3 +1,5 @@
+<div *ngIf="dropdown" class="close-dropdown"  (click)="closeDropdown()"></div>
+
 <div class='dropdown' *ngIf="dropdown" >
     <div class="container" *ngIf="dropdown.name == 'actualités' || dropdown.name == 'services'">
         <div class="section" *ngFor="let elements of dropdown.secondNavigation">
@@ -14,7 +16,7 @@
             <li *ngFor="let element of elements"><a href="{{element.link}}"><span>{{element.name}}</span><span>></span></a></li>
         </ul>
         <ul class="some-article-nav" *ngIf="articles">
-            <li *ngFor="let article of articles"><a href="#"><div class="img"></div><p>{{article.categorie}}</p><p class='lemondelogo'></p><p>{{article.title}}</p></a></li>
+            <li *ngFor="let article of articles"><a href="#"><div class="img"></div><p class="categorie">{{article.categorie | uppercase}}</p><p><span class='lemondelogo'><img [src]= "logoarticle" alt="logo"></span> {{article.title}}</p></a></li>
         </ul>
     </div>
 </div>
