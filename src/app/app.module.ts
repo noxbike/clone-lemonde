@@ -9,6 +9,10 @@ import { DropdownNavComponent } from './component/dropdown-nav/dropdown-nav.comp
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeArticlesComponent } from './component/home-articles/home-articles.component';
+import { MainArticleComponent } from './component/main-article/main-article.component';
+import { HeadlineArticleComponent } from './component/headline-article/headline-article.component';
+import { RunnerArticleComponent } from './component/runner-article/runner-article.component';
+import { RiverArticleComponent } from './component/river-article/river-article.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +20,11 @@ import { HomeArticlesComponent } from './component/home-articles/home-articles.c
     NavigationComponent,
     HeaderComponent,
     DropdownNavComponent,
-    HomeArticlesComponent
+    HomeArticlesComponent,
+    MainArticleComponent,
+    HeadlineArticleComponent,
+    RunnerArticleComponent,
+    RiverArticleComponent
   ],
   imports: [
     BrowserModule,

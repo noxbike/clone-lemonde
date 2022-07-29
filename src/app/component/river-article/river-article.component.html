@@ -1,0 +1,4 @@
+<div class="article" *ngFor="let article of river; let i = index">
+    <h4>{{article.title}}</h4>
+    <div *ngIf="i < 4" class="picture"></div>
+</div>

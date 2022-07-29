@@ -1,7 +1,46 @@
-div{
+.home-article{
     background-color: white;
     width: 50%;
     margin-right: auto;
     margin-left: auto;
     margin-top: 7%;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.main-article-container{
+    width: 60%;
+    padding: 2%;
+}
+
+.headline-article-container{
+    width: 31%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.runner-article-container{
+    border-top: 1px solid #d5d8dc;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 2%;
+    padding: 4% 0;
+}
+
+.river-article-container{
+    border-top: 1px solid #d5d8dc;
+    width: 100%;
+    margin: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }

@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from 'src/app/service/data.service';
 
 @Component({
   selector: 'app-home-articles',
@@ -7,14 +6,10 @@ import { DataService } from 'src/app/service/data.service';
   styleUrls: ['./home-articles.component.scss']
 })
 export class HomeArticlesComponent implements OnInit {
-  articles!: any;
   constructor(
-    private ds: DataService,
   ) { }
 
   ngOnInit(): void {
-    this.articles = this.ds.getArticle();
-    console.log(this.articles)
   }
 
 }

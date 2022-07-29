@@ -1,0 +1,14 @@
+<div class="main-article">
+    <div [ngClass]="{'top-article': i == 0, 'twoOther': i != 0}" *ngFor="let article of data; let i = index">
+        <div *ngIf="i == 0">
+            <h2>{{article.title}}</h2>
+            <div class="picture"></div>
+            <p>{{article.resume}}</p>
+        </div>
+        <div *ngIf="i != 0">
+            <div class="article">
+                <h4>{{article.title}}</h4>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,7 +1,8 @@
-<div>
-    <ul>
-        <li *ngFor="let article of articles">
-            <h3>{{article.title}}</h3>
-        </li>
-    </ul>
+<div class="home-article">
+    <section class="main-section">
+        <app-main-article class="main-article-container"></app-main-article>
+        <app-headline-article class="headline-article-container"></app-headline-article>
+        <app-runner-article class="runner-article-container"></app-runner-article>
+        <app-river-article class="river-article-container"></app-river-article>
+    </section>
 </div>

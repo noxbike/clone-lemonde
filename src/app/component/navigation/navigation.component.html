@@ -3,7 +3,7 @@
         <li *ngFor="let navigation of navigations"  [ngClass]="{Active: dropdown?.name === navigation?.name}" (click)="setDropdown(navigation)">
             <a *ngIf="navigation?.name != 'home' && navigation?.name != 'search'" [class.dropdown-button]="navigation.haveScdNav" routerLink="{{navigation.link && navigation.link}}">
                 {{navigation.name | uppercase}}
-                <span class="dropdown-icon" ><mat-icon *ngIf="navigation.secondNavigation">expand_less</mat-icon></span>
+                <span class="dropdown-icon" ><mat-icon *ngIf="navigation.secondNavigation">expand_more</mat-icon></span>
             </a>
             <a routerLink="{{navigation.link}}">
                 <mat-icon *ngIf="navigation?.name == 'home' || navigation?.name == 'search'"aria-hidden="false" aria-label="Example home icon">{{navigation.name}}</mat-icon>
