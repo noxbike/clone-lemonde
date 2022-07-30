@@ -1,5 +1,5 @@
 .picture{
-    width:314px;
+    width:200px;
     height: 75px;
     background-color: #d5d8dc;
 }
@@ -9,8 +9,9 @@ h4{
 }
 
 .article{
-    width: 45%;
+    width: 100%;
     padding-top: 2%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -19,4 +20,27 @@ h4{
 
 .article:nth-child(1), .article:nth-child(2){
     border-top: none;
+}
+
+@media screen and (min-width: 576px){
+    .article{
+        width: 80%;
+    }
+
+}
+@media screen and (min-width: 768px){
+    .article{
+        width: 664px;
+    }
+
+}
+@media screen and (min-width: 1024px){
+    .article{
+        width: 45%;
+    }
+
+    .picture{
+        width:314px;
+        height: 75px;
+    }
 }

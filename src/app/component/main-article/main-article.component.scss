@@ -6,7 +6,7 @@
 
 .main-article{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-around;
 }
@@ -19,5 +19,16 @@
 }
 
 .twoOther{
-    width: 40%;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px)
+{
+    .main-article{
+        flex-direction: row;
+    }
+
+    .twoOther{
+        width: 40%;
+    }
 }

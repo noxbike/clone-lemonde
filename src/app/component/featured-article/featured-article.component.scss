@@ -1,18 +1,52 @@
 .featured-article{
     text-align: center;
-    border: 1px solid #d5d8dc;
+    border: none;
 }
 
 .content{
-    margin-top: -20%;
+    margin-top: -4rem;
     width: 90%;
     margin-right: auto;
     margin-left: auto;
     background-color: white;
 }
 
+.content .resume {
+    display: none;
+}
+
 .picture{
     height: 200px;
     width: 100%;
     background-color: #d5d8dc;
+}
+
+.featured-article{
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 576px){
+    .featured-article{
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width: 738px){
+    .featured-article{
+        width: 500px;
+        border: 1px solid #d5d8dc;
+    }
+    .content .resume{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .content{
+        margin-top: -20%;
+    }
+    .featured-article{
+        width: 100%;
+    }
 }

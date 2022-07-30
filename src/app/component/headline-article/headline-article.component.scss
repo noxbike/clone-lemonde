@@ -1,5 +1,27 @@
 .picture{
-    width: 100%;
-    height: 150px;
+    width: 70%;
+    height: 6rem;//150px
     background-color: #d5d8dc;
+}
+
+
+.headline-article:nth-child(1){
+    border-bottom: 1px solid #d5d8dc;
+}
+
+.headline-article{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+@media screen and (min-width: 1024px){
+    .headline-article{
+        flex-direction: column;
+    }
+
+    .picture{
+        height: 150px;
+        width: 100%;
+    }
 }

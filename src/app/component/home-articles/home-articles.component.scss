@@ -1,32 +1,36 @@
 .home-article{
     background-color: white;
-    width: 50%;
+    width: 100%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 7%;
 }
 
 .main-section{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-    width: 70%;
+    width: 98%;
 }
 .second-section{
-    width: 27%;
+    width: 100%;
     margin: 2% auto;
 }
 
+.third-section{
+    width: 100%;
+}
+
 .main-article-container{
-    width: 60%;
-    padding: 2%;
+    width: 95%;
+    margin: 0 auto;
 }
 
 .headline-article-container{
-    width: 31%;
-    padding: 2%;
+    width: 95%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -35,7 +39,7 @@
 .runner-article-container{
     border-top: 1px solid #d5d8dc;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     margin: 2%;
     padding: 4% 0;
@@ -43,10 +47,71 @@
 
 .river-article-container{
     border-top: 1px solid #d5d8dc;
-    width: 100%;
-    margin: 2%;
+    width: 96%;
+    margin: 2% auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     flex-wrap: wrap;
+}
+@media screen and (min-width: 576px){
+    .main-article-container{
+        width: 80%;
+        padding: 2%;
+    }
+    .headline-article-container{
+        width: 80%;
+        padding: 2%;
+    }
+    .river-article-container{
+        width: 80%;
+        padding: 2%;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .main-article-container{
+        max-width: 664px;
+    }
+    .headline-article-container{
+        width: 664px;
+    }
+    .river-article-container{
+        width: 664px;
+    }
+}
+
+@media screen and (min-width: 1024px)
+{
+    .home-article{
+        max-width: 1024px;
+        flex-direction: row;
+        margin-top: 8.2rem;
+    }
+    .main-section{
+        flex-direction: row;
+        width: 70%;
+    }
+    .second-section{
+        width: 27%;
+    }
+    .third-section{
+        width: 70%;
+    }
+
+    .main-article-container{
+        width: 60%;
+    }
+
+    .headline-article-container{
+        width: 31%;
+    }
+
+    .runner-article-container{
+        flex-direction: row;
+    }
+
+    .river-article-container{
+        flex-direction: row;
+    }
 }

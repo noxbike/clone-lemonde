@@ -23,11 +23,12 @@
 .logo-of-company{
     display:flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:space-around;
     align-items: center;
     margin-right: auto;
     margin-left: auto;
-    width: 60%;
+    max-width: 1024px;
+    width: 1024px;
     .read-classic-newsPaper{
         display: flex;
         flex-direction: row;
@@ -69,5 +70,24 @@
         .connect:hover{
                 text-decoration: underline;
         }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .logo-of-company{
+        width: 100%;
+        justify-content:space-between;
+    }
+    .logo-of-company img{
+        width: 6rem;
+        margin: 2% 0;
+        padding: 2% 1%;
+    }
+
+    .SubscribeOrConnect{
+        padding: 0 1%;
+    }
+    .switch-language, .logo-of-company .read-classic-newsPaper{
+        display: none;
     }
 }
