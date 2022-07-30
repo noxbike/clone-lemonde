@@ -13,6 +13,7 @@ import { MainArticleComponent } from './component/main-article/main-article.comp
 import { HeadlineArticleComponent } from './component/headline-article/headline-article.component';
 import { RunnerArticleComponent } from './component/runner-article/runner-article.component';
 import { RiverArticleComponent } from './component/river-article/river-article.component';
+import { FeaturedArticleComponent } from './component/featured-article/featured-article.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { RiverArticleComponent } from './component/river-article/river-article.c
     MainArticleComponent,
     HeadlineArticleComponent,
     RunnerArticleComponent,
-    RiverArticleComponent
+    RiverArticleComponent,
+    FeaturedArticleComponent
   ],
   imports: [
     BrowserModule,
