@@ -12,6 +12,7 @@ export class NavigationComponent implements OnInit {
   articles!: any;
   Active = 'Active';
   historiqueSrc!: string;
+  body = document.getElementsByTagName('body')[0];
   constructor(
     private ds: DataService,
   ) { }
@@ -25,6 +26,7 @@ export class NavigationComponent implements OnInit {
   setDropdown(value: any): void {
     this.dropdown = value.haveScdNav ? value : null;
     this.articles = this.getFewArticle(value.name);
+    this.body.style.overflow = 'hidden';
   }
 
   getFewArticle(categorie: string) {
@@ -36,7 +38,7 @@ export class NavigationComponent implements OnInit {
   onCloseDropdown() {
     this.Active = 'inactive';
     this.articles = null;
+    this.body.style.overflow = 'scroll';
     return this.dropdown = null;
-
   }
 }

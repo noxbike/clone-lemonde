@@ -2,7 +2,7 @@
 
 <div class='dropdown' *ngIf="dropdown" >
     <div class="container" *ngIf="dropdown.name == 'actualités' || dropdown.name == 'services'">
-        <div class="section" *ngFor="let elements of dropdown.secondNavigation">
+        <div class="section {{dropdown?.name}}" *ngFor="let elements of dropdown.secondNavigation">
             <h3>{{elements.name | uppercase}}</h3>
             <ul class="{{elements.name}}">
                 <li *ngFor="let nav of elements.nav">
