@@ -10,6 +10,8 @@ export class HeaderComponent implements OnInit {
   imageAlt!: string;
   journalLogo!: string;
   journalAlt!: string;
+  connectionSrc!: string;
+  connectionAlt!: string;
   constructor() { }
 
   ngOnInit(): void {
@@ -17,6 +19,8 @@ export class HeaderComponent implements OnInit {
     this.imageAlt = 'logo';
     this.journalAlt = 'logo-jounal';
     this.journalLogo= 'https://ge-vendee-littorale.fr/wp-content/uploads/2019/03/Presse.png';
+    this.connectionSrc = '../../../assets/connection.svg';
+    this.connectionAlt = 'connection-logo';
   }
 
 }

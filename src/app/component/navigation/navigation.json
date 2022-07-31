@@ -6,6 +6,12 @@
             "link":"#"
         },
         {
+        "name": "historique",
+        "haveScdNav": false,
+        "link":"#",
+        "class":"historique"
+        },
+        {
             "name":"actualités",
             "haveScdNav": true,
             "secondNavigation":[

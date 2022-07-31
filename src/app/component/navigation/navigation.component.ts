@@ -10,7 +10,8 @@ export class NavigationComponent implements OnInit {
   navigations = navigation.navigation;
   dropdown!: any;
   articles!: any;
-  Active = 'Active'
+  Active = 'Active';
+  historiqueSrc!: string;
   constructor(
     private ds: DataService,
   ) { }
@@ -18,6 +19,7 @@ export class NavigationComponent implements OnInit {
   ngOnInit(): void {
     this.dropdown = null;
     this.articles = null;
+    this.historiqueSrc = "../../../assets/historique.svg"
   }
 
   setDropdown(value: any): void {

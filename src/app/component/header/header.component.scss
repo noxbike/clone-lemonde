@@ -66,10 +66,35 @@
             padding: 8px 16px;
             text-decoration: none;
             color:#2a303b;
+            display: inline-block;
+            position: relative;
+            img{
+                width: 23px;
+                padding: 0;
+                position: absolute;
+                bottom: 7px;
+                left: -8px;
+            }
+            span:nth-child(2){
+                border-right: 1px solid #d5d8dc;
+                padding-right: 10px;
+            }
         }
         .connect:hover{
                 text-decoration: underline;
         }
+    }
+}
+
+@media screen and (max-width: 572px){
+    .connect span:nth-child(2){
+        display: none;
+    }
+    .connect span:nth-child(1){
+                border-right: 1px solid #d5d8dc;
+                position: absolute;
+                bottom: -9px;
+                left: -8px;
     }
 }
 
